@@ -6,7 +6,10 @@
     <title>Svatební pozvánka</title>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
+        :root {
+  	    --my-purple: #514adc; /* Purple */
+	}
+	body {
             font-family: 'Epilogue', sans-serif;
             line-height: 1.6;
             margin: 0;
@@ -15,7 +18,7 @@
             color: #333;
         }
         header {
-            background-color: #f4c2c2; <!--#514adc;--> 
+            background-color: #514adc; 
             color: white;
             padding: 20px;
             text-align: center;
@@ -69,15 +72,15 @@
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #f4c2c2;
-            color: white;
+            background-color: white;
+            color: black;
             margin-top: 20px;
         }
         button {
             display: block;
             margin: 20px auto;
             padding: 10px 20px;
-            background-color: #f4c2c2;
+            background-color: #514adc;
             color: white;
             border: none;
             cursor: pointer;
@@ -86,64 +89,104 @@
         button:hover {
             background-color: #e38b8b;
         }
+	mark {
+	    padding: 4px;
+  	    background-color: black;
+ 	    color: white;
+	}
+	h2 {
+  	    color: var(--my-purple);
+	}
 </style>
 </head>
 <body>
 
     <nav>
-        <a href="#details">Detaily</a>
-        <a href="#accommodation">Ubytování</a>
-        <a href="#transport">Doprava</a>
-        <a href="#rsvp">Potvrzení účasti</a>
+        <a href="#kdy a kde">Kdy a kde?</a>
+        <a href="#kudy k nam">Kudy k nám?</a>
+        <a href="#spani">Kde složit hlavu?</a>
+        <a href="#vylet obed">Kam na výlet a na oběd?</a>
+    	<a href="#ostatni">Plus jedničky, dress code a dary</a>
+    	<a href="#dotaznik">Chci u toho být s vámi</a>
     </nav>
 
     <div class="image-container">
         <img src="svatebni.net-puvodni-foto.jpg" alt="Velká fotka" class="header-image">
         <div class="text-overlay">
-            <div class="large-text">Horní řádek textu</div>
-            <div class="small-text">Spodní řádek textu</div>
+            <div class="large-text">Svatba na Slapech</div>
+            <div class="small-text"><mark>SVATBA</mark> <b>Kateřina Kykalová & Matěj Vais</b> &mdash; 27. září 2025 </div>
         </div>
     </div>
 
-    <section id="details">
-        <h2>Detaily o svatbě</h2>
-    <p>
-	<ul>
-	<li>čas a místo</li>
-	<li>stručný program</li>
-	<li>dress code</li>
-	</ul>
-    </p>
+    <section id="kdy a kde">
+        <h2>Kdy a kde?</h2>
+    	<p>
+	Své ano si řekneme 27. září 2025 ve 14 hodin na lesní mýtince v <a href=https://mapy.cz/turisticka?source=addr&id=9711887&ds=1&x=14.3997575&y=49.8245527&z=17>Letovisku Slapy</a> a na stejném místě, v čerstvě zrenovovaném sále bývalé restaurace uprostřed lesa, se budeme následně i veselit. Hudbu k obřadu i večernímu tanečnímu řádění totiž zajistí Elias & Kotty! Hostina začne netradičně rovnou dortem (proč čekat na dezert?) v 16 hodin a pořádné hodování vypukne polévkou a rautem v 18 hodin večer. Na něco na zub ale určitě natrefíte i v průběhu.
+    	</p>
+   	<p>
+	Areál <a href=https://mapy.cz/turisticka?source=addr&id=9711887&ds=1&x=14.3997575&y=49.8245527&z=17>Letoviska</a> máme nicméně pronajatý na celý víkend od pátku do neděle (od dvou do dvou), takže s námi můžete tu velkou událost oslavit opravdu důkladně! V pátek budeme vše chystat a opečeme si něco na ohýnku, v sobotu dopoledne budete moci vyrazit na výlet po okolí, abyste ze Slap neviděli jen les, ale i známé přehradní jezero a taky rodnou ves babičky Mariánky, anebo si můžete zasportovat přímo v areálu Letoviska. K dispozici je volejbalový kurt se sítí, kterou lze s přimhouřením očí využít i na badminton, ale taky pingpongový stůl, stromy na slackliny a hamaky nebo pískoviště pro prcky.
+	</p>	 
     </section>
 
-    <section id="accommodation">
-        <h2>Ubytování</h2>
+    <section id="kudy k nam">
+        <h2>Kudy k nám?</h2>
         <p>	
-		<ul>
-		<li>Letovisko Slapy (odkaz na webovky, odkaz na polohu, adresa, souřadnice</li>
-		</ul>
+	Na zastávku Slapy, Motorest jezdí ze Smíchovského nádraží každou hodinu autobus a příjemná cesta podél Vltavy trvá 45 minut. Střídají se linky 361 a 390, případně je ještě vždy v půl doplňuje autobus 360, který vás ovšem doveze jen Na Polesí, odkud to budete mít o malinko dál. Ze zastávky od Motorestu je to do Letoviska, které leží v lese nad obcí Slapy, jeden kilometr a za 20 minut vás k němu dovede <a href=https://mapy.cz/s/balumakoje>žlutá turistická značka</a>. Motoristé to sem mají ze Smícháče stejnou cestou podél vody půl hodinky a přímo před Letoviskem je spousta místa na stání.
+	</p>
+	<p>
+	Zajímavost pro ty, kdo u nás ještě nebyli: autobus 361 staví přímo před domem č.p. 16, kde míval nevěstin prapraděda pekárnu a dnes sem jezdíme chalupařit – právě tady jsme se ženichem trávili naše první společné víkendy na podzim 2017!	
 	</p>
     </section>
 
-    <section id="transport">
-        <h2>Doprava</h2>
+    <section id="spani">
+	<h2>Kde složit hlavu</h2>
         <p>
-		<ul>
-		<li>možnost parkování hned vedle areálu</li>
-		<li>autobusové linky ze zastávky Praha &ndash; Smíchovské nádraží: 390 a 361, Smíchovské nádraží &ndash; Slapy, Motorest</li>
-		<li>pěší dostupnost ze zastávky Slapy, Motorest</li>
-		</ul>
+	V <a href=https://www.letoviskoslapy.cz/>Letovisku</a> je ubytovací kapacita pro 47 osob, do níž se nám bohužel vejde víceméně jen naše rozvětvená rodina, s jejímiž členy si individuálně potvrdíme, do jakého pokoje či srubu s nimi počítáme. Kamarádi si mohou v areálu mezi sruby postavit stan nebo přespat ve svém autě. V hlavní budově je každopádně k dispozici dostatek sprch a toalet a společná kuchyň, sruby mají vlastní koupelnu a kuchyňku.	
+	</p>
+	<p>
+	Kdo se nám nevejde do postýlek a potřebuje větší komfort, může využít jednoho z pěti pokojů v <a href=https://slapy-penzion.cz/>Penzionu Slapy</a>, jen budeme muset vyřešit odvoz, pokud nechce pohodlí postele vyvážit dobrodružstvím půlhodinové noční cesty přes les nebo abstinencí… Tak jako tak ale budeme zajišťovat odvoz pro nevěstiny rodiče a rodinné přátele, kteří budou spát na chalupě, takže by to neměl být problém.
 	</p>
     </section>
 
-    <section id="rsvp">
-        <h2>Potvrzení účasti</h2>
-        <p>Prosíme, potvrďte svou účast vyplněním následujícího dotazníku:</p>
+    <section id="vylet obed">
+        <h2>Kam na výlet a na oběd?</h2>
+        <p>
+	V sobotu dopoledne můžete vyrazit na procházku kolem Slap a spojit ji s obídkem v jedné z vynikajících místních restaurací. Připravili jsme pro vás <a href=https://mapy.cz/s/johohenofo>desetikilometrový okruh</a>, který si ovšem můžete libovolně zkrátit. Zavede vás na břeh jezera, ke kapli na Rovínku, která se před zatopením přehrady tyčila vysoko nad řekou a konaly se zde svaté poutě, jež nevěstin prapraděda zásoboval koláči. Kolem studánky vás provede do historického středu Království českého s možností zacházky na naši oblíbenou plážičku na Špičce a poté chatovou osadou Lahoz do <a href=https://ztracenymlyn.cz/>Ztraceného mlýna</a>, kde za covidu nevěsta s ženichem jedno léto makali na place a za barem. Malebná restaurace s výhledem na rybníček si chová svůj Angus dobytek a daňky, takže místní vyhlášená kuchyně je spíše masová (na ptáčka se sem jezdí z daleka), z vegetariánských jídel v nabídce narazíte většinou jen na ovocné knedlíky.
+	</p>
+	<p>
+	Po hrázi Buriánkova rybníka s romantickými břízami, mezi slapskými golfovými hřišti a kolem majestátní památné lípy poté vyšlápnete zpátky do Slap, kde si můžete zpoza brány prohlédnout <a href=https://zamekslapy.cz/>Slapský zámek</a>, známý mimo jiné z filmu Obsluhoval jsem anglického krále. Odtud můžete pokračovat ještě kolem božích muk u silnice do Buše a přes Kozinky k lavičce pod Čihadlem, odkud je krásný výhled na vesnici. Anebo už můžete vyrazit rovnou vzhůru k Santiniho baroknímu Kostelu svatého Petra a Pavla, kam nevěsta v dětství doprovázela prababičku na mše a je odtud krásný výhled až k Drtinově rozhledně na Besedné. Ze slapských restaurací můžeme doporučit <a href=https://www.fousatydite.cz/>U Fousatýho dítěte</a> v budově penzionu pod kostelem, ale i <a href=https://motorest-slapy.cz/?lang=cs>Motorest</a>, z jehož oken se lze pokochat výhledem na naši zahradu.	
+	</p>
+	<p>
+	Vzhledem k tomu, že Slapy jsou oblíbenou víkendovou destinací, a vašemu hojnému počtu doporučujeme ve všech restauracích předchozí rezervaci. Když byste zůstávali v areálu, při troše šikovnosti a větší objednávce by se měl dát případně zajistit i dovoz pizzy ze Slap nebo Štěchovic, anebo můžeme využít kuchyňky ve srubech.	
+	</p>
+	<p>
+	Výběr ze dvou tras pro vás máme i na nedělní střízlivění: můžete ho vzít buď z gruntu <a href=https://mapy.cz/s/damopogape>patnáctikilometrovým okruhem</a> slavnými Svatojánskými proudy pod Slapskou přehradou, kudy kdysi stateční voraři splavovali do Prahy dřevo ze Šumavy, nebo <a href=https://mapy.cz/s/lonasukefa>2-3 kilometrovou procházkou</a> na romantickou vyhlídku Máj, z níž můžete omrknout proudy shora a zvládnete ji i po čtyřech – zato si k ní budete muset popojet autem…
+	</p>
+    </section>
+ 
+    <section id="ostatni">
+        <h2>Plus jedničky, dress code a dary</h2>
+	<p>
+	Vzhledem k omezené kapacitě Letoviska, a to nejen ubytování, ale i sálu, kam se na hostinu nevejde víc než 80 hostů, tentokrát bohužel budete muset nechat plus jedničky doma, pokud je jmenovitě nepozveme. Mrzí nás to, ale máme velkou rodinu a spoustu přátel, které chceme na svatbě mít, a víc už to nafouknout zkrátka neumíme…
+	</p>
+	<p>
+	Dress code není žádný, což ale neznamená, že musíte přijít nazí – divoženky a hejkalové se z vás na naší lesní svatbě klidně mohou stát až v pozdních nočních hodinách. Na obřad uvítáme spíše elfskou nebo vílí eleganci.
+	</p>
+	<p>
+	Ze všeho nejvíc nás potěší vaše přítomnost. Nemenší radost nám však udělá i případný finanční příspěvek na naši vysněnou svatební cestu na Azorech!
+	</p>
+    </section>
+
+    <section id="dotaznik">
+        <h2>Chci u toho být s vámi!</h2>
+        <p>
+	Tak vyplň rezervační formulář a těš se na mejdan roku!
+	</p>
         <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSd9IEMlJXrGzrSPB3D8SdGA7LBrDjRTgv7ryNRzXwIhvUqL7w/viewform?usp=headerhttps://docs.google.com/forms/d/e/1FAIpQLSd9IEMlJXrGzrSPB3D8SdGA7LBrDjRTgv7ryNRzXwIhvUqL7w/viewform?usp=dialog'">Vyplnit dotazník</button>
     </section>
 
     <footer>
-        <p>Kontakt: maty.vais@gmail.com</p>
+        <p>Kontakt: kaczk@seznam.cz (Kateřina), maty.vais@gmail.com (Matěj)</p>
     </footer>
 </body>
 </html>
