@@ -8,8 +8,8 @@
     <style>
         :root {
   	    --my-purple: #514adc; /* Purple */
-	}
-	body {
+	    }
+	    body {
             font-family: 'Epilogue', sans-serif;
             line-height: 1.6;
             margin: 0;
@@ -17,12 +17,34 @@
             background-color: black; /*#fdf6e3;*/
             color: #333;
         }
+
         header {
             background-color: white; 
             color: black;
-            padding: 10px;
+            padding: 10px 20px;
             text-align: left;
             font-size: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center; /* Vertically center the logo and text */
+            justify-content: flex-start;
+        }
+
+        .header-logo {
+            width: 100px; /* Adjust the logo size as needed */
+            height: auto;
+            margin-right: 20px; /* Space between the logo and the text */
+        }
+
+        .header-text {
+            font-size: 40px; /* Adjust based on your desired header size */
+            color: black;
+            margin: 0;
         }
         nav {
             text-align: center;
@@ -37,12 +59,12 @@
         nav a:hover {
             text-decoration: underline;
         }
-	.image-container {
+	    .image-container {
             position: relative;
             width: 100%;
             max-width: auto;
             margin: 0 auto;
-	}
+	    }
         .header-image {
             display: block;
             width: 100%;
@@ -71,11 +93,28 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         footer {
-            text-align: center;
-            padding: 10px;
-            background-color: black;
+            background: black;
             color: white;
+            text-align: center;
+            padding: 15px 20px;
             margin-top: 20px;
+        }
+        .footer-container {
+           max-width: 100%;
+           margin: auto;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
         }
         button {
             display: block;
@@ -90,21 +129,34 @@
         button:hover {
             background-color: #e38b8b;
         }
-	mark {
-	    padding: 4px;
-  	    background-color: black;
- 	    color: white;
-	}
-	h2 {
-  	    color: var(--my-purple);
-	}
-</style>
+	    mark {
+	        padding: 4px;
+  	        background-color: black;
+ 	        color: white;
+	    }
+	    h2 {
+  	        color: var(--my-purple);
+	    }
+        .super-bold {
+             font-weight: 900; /* Higher value = bolder */
+        }
+    </style>
 </head>
 <body>
 
-    <header>
+    <!-- <header>
     <b>svatební.net</b>
+    </header> -->
+
+    <header>
+        <div class="header-container">
+            <img src="srdce-uzke.jpg" alt="Logo" class="header-logo">
+            <div class="header-text">
+                <p class="super-bold">svatební.net</p>
+            </div>
+        </div>
     </header>
+
     <!-- <nav>
         <a href="#kdy a kde">Kdy a kde?</a>
         <a href="#kudy k nam">Kudy k nám?</a>
@@ -118,7 +170,7 @@
         <img src="foto-oranzova-fialova.gif" alt="Velká fotka" class="header-image">
         <div class="text-overlay">
             <div class="large-text">Svatba na Slapech</div>
-            <div class="small-text"><mark>SVATBA</mark> <b>Kateřina Kykalová & Matěj Vais</b> &mdash; 27. září 2025 </div>
+            <div class="small-text"><mark>POZVÁNKA</mark> <b>Kateřina Kykalová & Matěj Vais</b> &mdash; 27. září 2025 </div>
         </div>
     </div>
 
@@ -190,7 +242,19 @@
     </section>
 
     <footer>
-        <p>Kontakt: kaczk@seznam.cz, maty.vais@gmail.com </p>
+        <div class="footer-container">
+            <div class="contact-info">
+                <p>Kontakt: 
+                    <a href="mailto:maty.vais@gmail.com">maty.vais@gmail.com</a>, 
+                    <a href="mailto:kaczk@seznam.cz">kaczk@seznam.cz</a>
+                </p>
+                <p>Spřátelené weby: 
+                    <a href="https://divadelni.net/" target="_blank">divadelní.net</a>,
+                    <a href="https://www.adventura.cz/" target="_blank">Adventura.cz</a>
+                </p>
+            </div>
+        </div>
     </footer>
+    
 </body>
 </html>
